@@ -1,0 +1,169 @@
+salesforce 面经
+
+Describe how hash table works. How to implement a hash table?
+
+Implement a stack using a Queue 
+use two queues
+	queue1 push: queue1.offer();
+	queue2 pop: while queue1.size() > 1 then queue1.poll() then queue2.offer() while queue2 is not empty queue2.polls() and queue1.offer() then queue1.pop()
+           top: 
+		
+
+Is Singleton class thread safe?  
+
+Get remainder string after a sub string. Example: inputStr = "abcde" subStr = "cd" return = "e" Secound round was another technical round. The interviewer was not clear with his question. Max repeated character which occurs at a time first index.. Example: aabbaaa output: 4
+
+
+Also discussion of past experiences/projects and why you're interested in Salesforce. Medium difficulty.
+
+Couple of technical questions like how to get the unique items from an array, How to keep track of the max and min numbers from a continuous stream of numbers. I solved the… 
+
+asked intermediate level java and concurrency questions. Got some contact information, submitted my resume online, and got an email back scheduling a phone interview. Had one phone interview, some more email back and forth about how I felt the interview went, and then after about a week or two I got offer
+
+ "tell me about yourself", "what are you interesting in", "why do you want to change job", "why do you want to work for Salesforce", etc. If the manager is satisfy with your answers then an onsite interview will be scheduled. Process is very quick.
+ 
+In java and using math, check if a number is a palindrome.  
+
+know your algorithms with respect to running time and memory requirements. If you worked hard in CS school and learned the fundamentals well, all the questions are fair. Understand multi-threading, multi-process, algos (DP) and advanced data structs, various testing (unit, functional, etc), agile scrum, databases, operating systems (mostly unix based), web layers and little bit of network protocols helped (depending on… 
+
+the interview questions are average level. interviewers are fine and the questions are not that hard, some the questions are a little bit tricky.
+
+Data Structures. Specifically focused on Linked Lists.
+
+The interview itself was a bit of a letdown. I talked with 6 people or so, two of which were general chit-chat, with them telling me about… 
+
+Whiteboarding question.. not really unexpected, just difficult if you haven't memorized
+
+One phone screen with coding assignment and one on site with 2 hr coding assignment and in person interview with several members in the team.
+
+Find the first index of the substring. Condition: Do not use java library function or regular expressions. And measure the performance of your implementation with the standard java library function. Examples: String 1: “abcdefg” String 2: “bcd” Should return 1 String 1: “abcdefg” String 2: “x” Should return -1  
+
+Fastest way to find the middle node in a linked list  
+
+Onsite programming test was conducted. This was something different than other companies. You get 2 hours to code and a problem statement along with expected input and output is given. They typically ask to code in java but… 
+
+Asked various behavioral questions. Asked if I was familiar with certain technologies.  
+
+I applied through an employee referral. The process took 2 weeks. I interviewed at Salesforce (San Francisco, CA) in July 2008.
+Interview
+
+ The manager talked to me for a bit about what salesforce does and what his team does in particular, so I got the idea I was interviewing for his team in particular. We talked about my current job a bit, how aggressively I was looking for a new one, and then he asked a few general conceptual uestions that anybody who had real experience would be able to answer. Then the recruiter set up a day a week later for me to come in and be interrviewed in person. The all day interview consisted of 3 interviews with other developers, lunch with the manager, and a programming test. The test itself was quite easy, seems like it was more just to ensure that I actually had the experience I said I had. Lunch was good and we talked a lot about why I was looking for a new job and what the team was looking for. They also made clear that if it wasnt a fit for their team but they liked me that they would pass my resume on to other teams. I was asked a lot of questions, from whiteboarding code to conceptual stuff. One of the interviewers asked real hard questions and we actually got into some interesting discussion, I guess that sealed the deal. I was given an offer a week later.
+Show Less
+
+Interview Questions
+One of the interviewers asked me to write two algorithms for parsing xml, one that was as memory efficient as possible, the other that was as optimized as possible
+
+Another call was setup days later for a technical phone screen which was a one on one talk with an engineer. After a few days I was contacted again for a second technical call. A week or so after that I was contacted to come in for a full day on site interview consisting of five interviews, three… 
+
+ this was followed by a coding exercise: This took place remotely. I was sent a problem to solve and given two hours, at which point the interviewer called me back, and I took him through a code review and also answered a few other technical questions. I was then invited for an on-site… 
+ 
+ Phone interview with hiring manager and then on-site full day interview on various topics related to the role
+
+ Interview Questions
+ In depth questions on testing and QA even after I mentioned that I don't have the background.
+ 
+ On campus interview after job fair. The interviewer is a QE manager, but most questions are general technical, coding questions for SD There are no behavior questions, we directly went into technical 1. basic java concepts 2. Binary tree, how to balance... 3. clockwise print out a M*N matrix. Solution: recursive 4. Figure out test cases for a blackbox testing for a file-uploading system
+ 
+ AVL tree
+ 
+ The first few were on specifics of Java and the later ones were more algorithmic ones that I had to write code for. I wasn't given much time to figure out the… 
+ 
+ How do you reverse the words in a string? Code. 
+ 	use stringbuilder
+
+Asked something about java memory questions. How to handle out of memory error?  
+	
+
+some basic concept questions like what it means to be static/superclass/object-oriented language. Followed by a structured on-line coding question on determining if parenthesis is balanced in a given line of text.
+	static:
+	superclass:
+	object-oriented language:
+	
+	code: if parenthesis is balanced in a given line of text
+			import java.util.*;
+			public class validParenthesis{
+				public static boolean validParenthesis(String s) {
+					if (s == null || s.length() == 0) {
+						return true;
+					}
+					char[] arr = s.toCharArray();
+					Stack<Character> stack = new Stack<Character>();
+					for (int i = 0; i < arr.length; i++) {
+						if (arr[i] != '{' && arr[i] != '(' && arr[i] != '[' && arr[i] != '}' && arr[i] != ']' && arr[i] != ')') {
+							continue;
+						}
+						if (arr[i] == '{' || arr[i] == '[' || arr[i] == '(') {
+							stack.push(arr[i]);
+						} else if (stack.isEmpty() || stack.peek() != ParenMatch(arr[i])) {
+							return false;
+						} else {
+							stack.pop();
+						}
+					}
+					if (!stack.isEmpty()) {
+						return false;
+					}
+					return true;
+		
+				}
+				public static char ParenMatch(char c) {
+					if (c == '}') {
+						return '{';
+					} else if(c == ']') {
+						return '[';
+					} else if (c == ')') {
+						return '(';
+					}
+					return '&';
+				}
+				public static void main(String[] args) {
+					String s = "AB(eiet){ew}ew[we]9";
+					System.out.println(validParenthesis(s));
+				}
+			}
+
+Advantage and disadvantage of using index in database.
+out join vs inner join.
+list vs set.
+Design how to shuffle cards in a card game.
+How to insert into a set. How to optimize?
+
+Algorithm question: 32 blocks, one is heavier than others. You have a scale, how to find the heavier one?. Waral 鍗氬鏈夋洿澶氭枃绔�,
+Divide and conquer use O(log n), how to optimize that?
+
+1）Java跟C++比有什么区别 
+
+2）abstract class vs interface? 什么时候用哪个？然后顺着问了诸如multi inheritance, polymorphism 这些OO的概念。
+
+3）然后问我知道thread不，有没有做过multi thread的东西？ Java的multithread咋整？我聊了下之前做过的C++的parallel programming的project，Java还真没弄过多线程的东西，面完了恶补了下。。。
+
+第二部分当然就是coding了。题目如下：（面完发现原来网上有类似的问题哇。。）
+
+http://www.braingle.com/brainteasers/7824/100-closed-lockers.html
+
+
+Suppose you're in a hallway lined with 100 closed lockers. 
+You begin by opening every locker. Then you close every second locker. Then you go to every third locker and open it (if it's closed) or close it (if it's open). Let's call this action toggling a locker. Continue toggling every nth locker on pass number n. After 100 passes, where you toggle only locker #100, how many lockers are open?
+面试题就换成hallway里面有x个locker，初始状态都关闭，一群闲的蛋疼的二逼青年（人数＝y），第一个人toggle (if open,then close, if close then open) 每一个locker，第二个人每隔一个toggle一下，第三个每隔两个toggle一下。。。以此类推。。
+问题是写一个函数，已知locker数 x，二逼青年数 y，返回最终locker的状态
+我给出的代码如下：
+
+上次面intern的时候问了怎么reverse string，然后写几个test case，就没了。。。offer就来。。。。
+
+电面是个印度人打过来的，最开始印度人介绍了5分钟左右的Salesforce，接着说我们今天不考coding (和glassdoor面经不一样)，于是就开始问Java和一些面向对象，基本数据结构概念问题，下面是记得的一些问题
+Difference between inheritance and composition in terms of java?
+Linked list: inheritance or composition?
+Tell me a little bit about encapsulation, how to use that in java?
+Difference between abstract class and interface?
+Singleton pattern in terms of java?
+Database normalization? Disadvantage?
+Serialization in java?
+Some questions about client and server.
+Lookup time of array, map, linked list.
+Object vs. Primitive in Java?
+还有一些其他问题不太记得了，涉及Java, Database, Data Structure, Design pattern.
+
+
+第四轮是data structure，题目也挺简单的，一个是找string里面的duplicate,写出来了，不过问的挺仔细的，还有一个是linkedlist找后半段的开头点，我写的挺快，他问我你是不是在哪里见过这个题目，我说见过啊，肯定见过，我忘记在哪里见过了，这挺normal一个题目，怎么会没见过，然后他也没说啥，然后就一句一句分析code去了。题目很简单，但是真心的问的很细。
+
+最后一轮也是我面的最崩溃的一轮，基本上关于automation和design。就是属于不懂也就算了，面试官还不肯放弃，不停给我hint，问题是臣妾我真的get不到啊。然后超时了，他很无奈的问我，他能不能把那些白板内容拍照，我了大擦，我能说不么？

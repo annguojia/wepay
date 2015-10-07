@@ -1,0 +1,43 @@
+1)given a string, determine if the string is a valid phone number or not
+
+2)validate an email address
+
+3)given a string of a valid email, make a function that corrects the email address by its domain 
+
+
+考察的大多是Regular Expression
+
+之后问了一道spiral matrix的题，leetcode上有。。
+我答的一般，一是因为好久没说英语了。。二是因为我感觉我电面大脑完全不转，比onsite和做OA状态差很远。。。
+
+然后问题来了，后来HR回复我，就是问我是不是住在湾区，如果是的话，他们可以给onsite，但是如果住在东海岸，需要进行第二次电面。。。。。
+这个应该怎么办阿。。我是觉得wepay虽说不算大公司，但感觉还算是挺好的初创公司，感觉不应该省几百块的路费阿。。。是不是我要是说我住在东海岸，就要被直接默据了。。。
+请问大家有什么经验或者建议么？
+
+
+
+上上周面了Wepay的tool组，然后家里有点事，一直闹心没心思用电脑，现在补上，实在不好意思，顺便也跟论坛上私信我的几位兄台道个歉，没有及时回答你们的问题
+. 1point 3acres 璁哄潧
+面经：
+4轮 面试.1point3acres缃�
+1. Hiring Manager, 一个文件夹“root”，请找出root底下所有的包含文件名为“src"的文件的路径，值得注意的是，其中有可能包括名字为”src"的文件夹，需要排除在外
+    这个我用Trie和queue结合起来做的. 涓€浜�-涓夊垎-鍦帮紝鐙鍙戝竷
+2. 一个面无表情的老印，给了几个数字，好像是“1， 1， 2， 4， 7， 13， 24， ...”，求第i个是什么值
+    我不是记得起我是怎么做的，当时还卡了一段时间，其实就是这个值是前面3个数的和。
+3. 一个老美
+   a. 给一个字符串，格式是：xxx IP: 255.255.255.100 include: wepay.com，然后一个文件中包含多个这样的字符串，提取所有的IP地址.鐣欏璁哄潧-涓€浜�-涓夊垎鍦�
+   b. 还是这个格式，然后每次遇到xxx.com，提取它的对应的IP地址
+   我写了半天，然后小哥好像没怎么认真听，我也觉得我好想没太明白他题目的愿意，最后时间快到的时候他说了个他自己很牛逼的方法。
+4. 一个老印，没怎么看简历，所以问了很多有关无关的问题
+    a. reverse words in a string
+    b. sort a linked list
+
+# 上周星期三收到了HR打来的拒绝电话，然后就木有然后了
+#
+#
+# 1. 实现Hashtable的put和get
+#
+# 2. 选择题，哪个注释风格是错的，我选的是/* Comment/* more comment*/*/
+# 3. (a+b)*(c+d) a是int, b是float, c是double, d是long(具体顺序是什么记不太清），然后运算结果应该是一个double吧。. 鍥磋鎴戜滑@1point 3 acres
+# . more info on 1point3acres.com
+# 然后收到HR邮件说要聊一聊，a brief phone call, talk about the next steps 什么的，我以为会有技术电面什么的，也不知道HR这个电话是怎么回事，有人知道吗？
